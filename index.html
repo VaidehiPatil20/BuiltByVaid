@@ -37,6 +37,40 @@
 #projects .project-detail summary{cursor:pointer}
 #projects .project-detail summary:focus-visible{outline:2px solid #e9e0c8;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){#projects .card,#projects .visual{transition:none!important}}
+
+/* Editorial museum layout v2 — smaller, thoughtfully framed original photographs */
+:root{--bg:#171815;--panel:#22231f;--panel2:#272823;--line:#3d3e38;--text:#f2eee5;--muted:#b7b3a9;--accent:#d8c5a5;--blue:#d8c5a5}
+body{background:var(--bg);color:var(--text)}
+.nav{background:#171815ed;border-bottom-color:#3d3e38}
+.navlinks{color:#d2cdc3}
+.hero{min-height:570px}
+.hero:before{background:linear-gradient(105deg,#171815 35%,#303027a0 100%)}
+.gridlines{opacity:.08}
+.hero h1{font-weight:500;letter-spacing:-.065em}
+#projects{background:#1d1e1a;padding-top:110px;padding-bottom:110px}
+#projects .shell{max-width:1180px}
+#projects .section-head{align-items:end;margin-bottom:62px}
+#projects h2{font-size:clamp(56px,8vw,98px)}
+#projects .cards{grid-template-columns:repeat(12,minmax(0,1fr));gap:76px 36px;align-items:start}
+#projects .card,#projects .card:nth-child(4n+2),#projects .card:nth-child(4n+3),#projects .card:nth-child(4n+4){grid-column:span 6;margin-top:0;min-width:0}
+#projects .card:nth-child(even){padding-top:92px}
+#projects .card:nth-child(4n+3){padding-right:55px}
+#projects .card:nth-child(4n+4){padding-left:55px}
+#projects .visual{height:auto;min-height:0;aspect-ratio:5/3.25;max-height:270px;background:#30312b}
+#projects .visual.project-photo{max-width:100%;margin:0 auto}
+#projects .visual img{object-fit:contain!important;object-position:center;background:#30312b}
+#projects .visual svg{max-height:270px}
+#projects .cardbody{padding-top:16px;margin-top:17px}
+#projects .card h3{font-size:clamp(22px,2.3vw,30px);letter-spacing:-.035em}
+#projects .card p{font-size:13px;line-height:1.8}
+#projects .section-desc{font-size:14px}
+#projects .visual .code{font-size:9px;letter-spacing:.07em}
+#projects .tag{font-size:9px}
+#projects .case-content img{max-width:100%;height:auto;object-fit:contain}
+#projects .media-grid img,#projects .scrunchie-gallery img{max-height:250px;object-fit:contain}
+#projects .scrunchie-gallery video{max-height:230px;object-fit:contain;background:#171815}
+@media(max-width:800px){#projects .cards{grid-template-columns:1fr 1fr;gap:45px 20px}#projects .card:nth-child(n){grid-column:span 1;padding:0;margin:0}#projects .visual{max-height:215px}#projects{padding-top:80px;padding-bottom:80px}}
+@media(max-width:620px){#projects .cards{display:grid;grid-template-columns:1fr;gap:42px}#projects .card:nth-child(n){grid-column:1;padding:0;margin:0}#projects .visual{max-height:240px;aspect-ratio:5/3.3}#projects .section-head{margin-bottom:38px}}
 </style><style>.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.media-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);display:flex;flex-direction:column}.media-card img{width:100%;height:200px;object-fit:cover}.media-art{height:200px;background:radial-gradient(circle at 65% 30%,#286078,#102133 65%);display:grid;place-items:center;color:#7ae6df;font:700 28px 'Space Grotesk';letter-spacing:1px}.media-card .inside{padding:24px;display:flex;flex-direction:column;flex:1}.media-card h3{font:700 21px 'Space Grotesk';margin:5px 0 12px}.media-card p{font-size:14px;color:var(--muted);flex:1}.media-card .source{font-size:12px;color:var(--accent);font-weight:700;margin-top:15px}.media-card small{color:var(--muted);font-size:11px}.project-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.project-links a{color:var(--accent);font-size:12px;border:1px solid #315c64;padding:7px 10px;border-radius:6px}.project-links a:hover{background:#193d43}@media(max-width:850px){.media-grid{grid-template-columns:1fr}}.navlinks a:last-child{white-space:nowrap}</style><style>.project-detail{margin-top:19px;border-top:1px solid var(--line);padding-top:14px}.project-detail summary{cursor:pointer;color:var(--accent);font-weight:700;font-size:13px;display:flex;justify-content:space-between;list-style:none}.project-detail summary::-webkit-details-marker{display:none}.project-detail[open] summary{margin-bottom:18px}.case-content{border-top:1px solid #233f4b;padding-top:14px}.case-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);font-weight:700}.case-content h4{font-size:13px;margin:15px 0 4px;color:#eaf2f9}.case-content p{font-size:13px;margin:0;color:var(--muted)}.media-placeholder{border:1px dashed #3c6472;background:#102330;border-radius:9px;margin-top:18px;padding:18px;display:flex;flex-direction:column;gap:5px}.media-placeholder strong{font-size:12px;color:#d3f6f1}.media-placeholder span{font-size:12px;color:var(--muted)}.case-link{display:inline-block;color:var(--accent);font-size:13px;margin-top:15px;font-weight:700}.project-detail:focus-within{outline-offset:4px}</style><style>.scrunchie-card .visual{padding:0;overflow:hidden}.scrunchie-card .visual img{width:100%;height:100%;object-fit:cover;display:block}.scrunchie-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.scrunchie-gallery figure{margin:0;min-width:0}.scrunchie-gallery video{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:9px;background:#071923}.scrunchie-gallery figcaption{font-size:11px;line-height:1.4;color:var(--muted);padding-top:5px}@media(max-width:700px){.scrunchie-gallery{grid-template-columns:1fr}}</style><style>
 .real-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.real-gallery figure{margin:0;min-width:0}.real-gallery img{display:block;width:100%;height:220px;object-fit:contain;background:#0b1922;border-radius:8px}.real-gallery figcaption{font-size:11px;color:var(--muted);padding-top:7px;line-height:1.5}.card .visual.project-photo{padding:0;overflow:hidden}.card .visual.project-photo>img{width:100%;height:100%;object-fit:cover;display:block}.card .visual.project-photo .code{position:absolute;bottom:10px;left:12px;background:#071b23d9;padding:5px 8px;border-radius:4px}.real-gallery.single{grid-template-columns:1fr}@media(max-width:700px){.real-gallery{grid-template-columns:1fr}.real-gallery img{height:auto;max-height:400px}}
 </style></head><body><nav class="nav"><div class="shell"><a class="brand" href="#home">BUILT<span>BY</span>VAID</a><div class="navlinks"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#media">In the field</a><a href="#awards">Recognition</a><a href="#contact">Contact</a></div></div></nav><header class="hero" id="home"><div class="gridlines"></div><div class="shell" style="width:100%"><div class="hero-inner"><div class="eyebrow">Robotics Engineer · CMU Robotics Institute</div><h1>Building robots<br/>for the <span>real world.</span></h1><h2>Vaidehi Patil <span style="color:var(--accent)">/</span> Senior Robotics Engineer</h2><p class="lead">I build intelligent robotic systems from research to production—specializing in motion planning, manipulation, autonomy, and scalable robotics software.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn" href="#research">Read my research ↗</a></div><div class="metrics"><div class="metric"><strong>17%</strong><small>Higher palletizing throughput</small></div><div class="metric"><strong>52%</strong><small>Faster robot cycle time</small></div><div class="metric"><strong>220+</strong><small>Controllers in migration scope</small></div></div></div></div></header>
