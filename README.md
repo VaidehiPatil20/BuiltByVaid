@@ -23,3 +23,7 @@ Static website ready for GitHub Pages.
 - Motional research coverage: https://www.massrobotics.org/socially-aware-autonomous-mobility-discusses-autonomous-vehicle-interactions-with-first-responders/
 
 Image credit: the Symbotic industrial automation image is cropped from the publicly shared Medline post screenshot supplied by the site owner. Review reuse permission before publishing.
+
+
+## Scrunchie Robot media
+The Projects section now includes original video excerpts extracted from the supplied CMU presentation. Files are in assets/scrunchie/. Video playback uses HTML5 MP4. Confirm consent/rights before making human-subject footage public.
